@@ -6,33 +6,54 @@
     <title>Audio test</title>
 
     <style>
-      #test-pdf {
+      body {
+        margin: 0;
+        padding: 0;
         width: 100%;
-        height: 960px;
-      }
-      #play-audio {
+        height: 100vh;
         display: flex;
-        /* position: absolute; */
-        top: 30%;
-        left: 55%;
+        justify-content: center;
+        align-items: center;
+      }
+      .imageDiv {
         position: relative;
+      }
+      .svg {
+        max-width: 100%;
+        height: auto;
       }
       #play-audio {
         width: 4rem;
         height: 2rem;
         border: none;
         background-color: none;
+        position: absolute;
+        top: 30%;
+        left: 45%;
+        /* transform: translate(-50%, -50%); */
       }
     </style>
   </head>
 
   <body>
-    <img
-      id="play-audio"
-      src="https://kabirshuvo.com/images/Play_button.svg"
-      alt="play button icon"
-    />
-    <img id="pause-audio" src="" alt="" />
+    <div class="imageDiv">
+      <!-- image 1 -->
+      <img
+        class="svg"
+        src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-1.svg"
+        alt="hero page"
+      />
+      <!-- Play Audio Image -->
+      <img
+        id="play-audio"
+        src="https://kabirshuvo.com/images/Play_button.svg"
+        alt="play button icon"
+      />
+      <!-- Pause Audio Image -->
+      <img id="pause-audio" src="" alt="" />
+    </div>
+    <!-- Image Div -->
+
     <audio id="audio-element">
       <source
         src="https://kabirshuvo.com/Audios/kgf-maa-theme-45520.mp3"
@@ -40,21 +61,6 @@
       />
     </audio>
 
-    <!-- <img
-      src="https://kabirshuvo.com/pdfs/How_to_Be_Unhappy_A_Short_Guide.pdf"
-      alt="Background Image"
-    /> -->
-
-    <iframe
-      id="test-pdf"
-      src="https://kabirshuvo.com/pdfs/How_to_Be_Unhappy_A_Short_Guide.pdf"
-      frameborder="0"
-      ><img
-        id="play-audio"
-        src="https://kabirshuvo.com/images/Play_button.svg"
-        alt="play button icon"
-      />
-    </iframe>
     <script>
       const button = document.getElementById("play-audio");
       const audio = document.getElementById("audio-element");
@@ -62,10 +68,10 @@
       button.addEventListener("click", function () {
         if (audio.paused) {
           audio.play();
-          button.textContent = "Pause Audio";
+          button.src = "https://kabirshuvo.com/images/Pause_button.svg";
         } else {
           audio.pause();
-          button.textContent = "Play Audio";
+          button.src = "https://kabirshuvo.com/images/Play_button.svg";
         }
       });
     </script>
