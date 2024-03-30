@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio test</title>
+  </head>
+  <body style="background-color: #000">
+    <h1>Audio Test for PDFs</h1>
+    <button id="play-audio">Play Audio</button>
+    <audio id="audio-element">
+      <source
+        src="https://www.dropbox.com/scl/fi/lxbzou7rbt9iu25r1uik5/separation-185196.mp3?rlkey=g5btkqg1ie4y3q7c4q9bjxwl7&dl=0"
+        type="audio/mp3"
+      />
+    </audio>
+
+    <img
+      src="How to Be Unhappy A Short Guide - Music added.svg"
+      alt="Background Image"
+    />
+
+    <script>
+      // Get the button and audio element
+      const button = document.getElementById("play-audio");
+      const audio = document.getElementById("audio-element");
+
+      // Add click event listener to the button
+      button.addEventListener("click", function () {
+        // Check if audio is paused, if so, play it
+        if (audio.paused) {
+          audio.play();
+          button.textContent = "Pause Audio";
+        } else {
+          // If audio is already playing, pause it
+          audio.pause();
+          button.textContent = "Play Audio";
+        }
+      });
+    </script>
+  </body>
+</html>
