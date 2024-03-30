@@ -9,50 +9,180 @@
       body {
         margin: 0;
         padding: 0;
+        /* Added */
+      }
+      .HeroImageDiv {
         width: 100%;
         height: 100vh;
+        position: relative;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
       }
-      .imageDiv {
+      .imageContainer {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
       .svg {
         max-width: 100%;
         height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
-      #play-audio {
+      #play-audio,
+      #pause-audio {
         width: 4rem;
         height: 2rem;
         border: none;
         background-color: none;
         position: absolute;
-        top: 30%;
-        left: 45%;
-        /* transform: translate(-50%, -50%); */
+        top: 32%;
+        left: 48%;
+        display: none;
       }
     </style>
   </head>
 
   <body>
-    <div class="imageDiv">
-      <!-- image 1 -->
-      <img
-        class="svg"
-        src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-1.svg"
-        alt="hero page"
-      />
-      <!-- Play Audio Image -->
-      <img
-        id="play-audio"
-        src="https://kabirshuvo.com/images/Play_button.svg"
-        alt="play button icon"
-      />
-      <!-- Pause Audio Image -->
-      <img id="pause-audio" src="" alt="" />
+    <div class="imageContainer">
+      <div class="HeroImageDiv">
+        <!-- image 1 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-1.svg"
+          alt="hero page"
+        />
+        <!-- Play Audio Image -->
+        <img
+          id="play-audio"
+          src="https://kabirshuvo.com/images/Play_button.svg"
+          alt="play button icon"
+        />
+        <!-- Pause Audio Image -->
+        <img
+          id="pause-audio"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/pause-button.svg"
+          alt="pause button"
+        />
+      </div>
+      <!-- Image Div -->
+      <div class="imagesDiv">
+        <!-- image 2 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-2.svg"
+          alt="hero page"
+        />
+        <!-- image 3 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-3.svg"
+          alt="hero page"
+        />
+        <!-- image 4 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-4.svg"
+          alt="hero page"
+        />
+        <!-- image 5 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-5.svg"
+          alt="hero page"
+        />
+        <!-- image 6 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-6.svg"
+          alt="hero page"
+        />
+        <!-- image 7 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-7.svg"
+          alt="hero page"
+        />
+        <!-- image 8 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-8.svg"
+          alt="hero page"
+        />
+        <!-- image 9 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-9.svg"
+          alt="hero page"
+        />
+        <!-- image 10 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-10.svg"
+          alt="hero page"
+        />
+        <!-- image 11 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-11.svg"
+          alt="hero page"
+        />
+        <!-- image 12 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-12.svg"
+          alt="hero page"
+        />
+        <!-- image 13 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-13.svg"
+          alt="hero page"
+        />
+        <!-- image 14 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-14.svg"
+          alt="hero page"
+        />
+        <!-- image 15 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-15.svg"
+          alt="hero page"
+        />
+        <!-- image 16 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-16.svg"
+          alt="hero page"
+        />
+        <!-- image 17 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-17.svg"
+          alt="hero page"
+        />
+        <!-- image 18 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-18.svg"
+          alt="hero page"
+        />
+        <!-- image 19 -->
+        <img
+          class="svg"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-19.svg"
+          alt="hero page"
+        />
+      </div>
     </div>
-    <!-- Image Div -->
 
     <audio id="audio-element">
       <source
@@ -62,17 +192,26 @@
     </audio>
 
     <script>
-      const button = document.getElementById("play-audio");
+      const playButton = document.getElementById("play-audio");
+      const pauseButton = document.getElementById("pause-audio");
       const audio = document.getElementById("audio-element");
+      playButton.style.display = "inline";
 
-      button.addEventListener("click", function () {
-        if (audio.paused) {
-          audio.play();
-          button.src = "https://kabirshuvo.com/images/Pause_button.svg";
-        } else {
-          audio.pause();
-          button.src = "https://kabirshuvo.com/images/Play_button.svg";
-        }
+      playButton.addEventListener("click", function () {
+        audio.play();
+        playButton.style.display = "none";
+        pauseButton.style.display = "inline";
+      });
+
+      pauseButton.addEventListener("click", function () {
+        audio.pause();
+        playButton.style.display = "inline";
+        pauseButton.style.display = "none";
+      });
+
+      audio.addEventListener("ended", function () {
+        playButton.style.display = "inline";
+        pauseButton.style.display = "none";
       });
     </script>
   </body>
