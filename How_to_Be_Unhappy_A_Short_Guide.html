@@ -3,13 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Audio test</title>
+    <title>How to Be Unhappy A Short Guide</title>
 
     <style>
       body {
@@ -26,47 +20,6 @@
         justify-content: center;
         align-items: center;
       }
-      /* .bookNameDiv {
-        width: 25%;
-      } */
-      .book_name {
-        text-align: center;
-        width: fit-content;
-        font-family: "Playfair Display", serif;
-        font-size: 3rem;
-        font-weight: 500;
-        object-fit: contain;
-        letter-spacing: 4px;
-      }
-      .UnhappyFaceDiv {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2rem;
-      }
-      .UnhappyFaceImg {
-        min-width: 120%;
-      }
-      .Dr_Josh_gonsher_Author_Name_Div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 4rem;
-        margin-bottom: 4rem;
-        width: 32rem;
-        height: 7rem;
-        background: #90c6c1;
-      }
-      .Dr_Josh_gonsher_Author_Name {
-        text-align: center;
-        font-family: "Noto Serif", serif;
-        font-style: italic;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: large;
-      }
-
       .imageContainer {
         position: relative;
         display: flex;
@@ -82,63 +35,16 @@
         justify-content: center;
         align-items: center;
       }
-      /* .playButton,
-      .PauseButton {
-        width: 4rem;
-        height: 2rem;
-        border: none;
-      } */
       #play-audio,
       #pause-audio {
         width: 4rem;
         height: 2rem;
         border: none;
         background-color: none;
-        /* position: absolute;
+        position: absolute;
         top: 33%;
-        left: 48%; */
+        left: 48%;
         display: none;
-      }
-
-      /* Media query for viewport width <= 520px */
-      @media (max-width: 640px) {
-        #play-audio,
-        #pause-audio {
-          left: 43%; /* Adjust as needed */
-          top: 31%;
-          width: 5rem;
-          height: 2.5rem;
-        }
-
-        .Dr_Josh_gonsher_Author_Name_Div {
-          width: 23rem;
-          height: 5rem;
-        }
-      }
-
-      /* Media query for viewport width <= 520px */
-      @media (max-width: 520px) {
-        #play-audio,
-        #pause-audio {
-          left: 43%; /* Adjust as needed */
-          top: 31%;
-        }
-
-        .book_name {
-          font-size: 2.5rem;
-          font-weight: 500;
-        }
-      }
-
-      /* Media query for viewport width <= 400px */
-      @media (max-width: 400px) {
-        #play-audio,
-        #pause-audio {
-          left: 40%; /* Adjust as needed */
-          top: 35%;
-          width: 4rem;
-          height: 2rem;
-        }
       }
     </style>
   </head>
@@ -146,45 +52,24 @@
   <body>
     <div class="imageContainer">
       <div class="HeroImageDiv">
-        <div class="bookNameDiv">
-          <h1 class="book_name">
-            HOW TO BE <br />
-            UNHAPPY : A <br />SHORT GUIDE
-          </h1>
-        </div>
-        <div class="buttons_container">
-          <!-- Play Audio Image -->
-          <img
-            id="play-audio"
-            src="https://kabirshuvo.com/images/Play_button.svg"
-            alt="play button icon"
-          />
-
-          <!-- Pause Audio Image -->
-          <img
-            id="pause-audio"
-            src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/pause-button.svg"
-            alt="pause button"
-          />
-        </div>
-        <!-- Unhappy Face Image -->
-        <div class="UnhappyFaceDiv">
-          <img
-            class="UnhappyFaceImg"
-            src="Unhappy_Face-svg.svg"
-            alt="Unhappy Face Image"
-          />
-        </div>
-        <div class="Dr_Josh_gonsher_Author_Name_Div">
-          <p class="Dr_Josh_gonsher_Author_Name">by Dr. Josh Gonsher</p>
-        </div>
-
         <!-- image 1 -->
-        <!-- <img
+        <img
           class="svg"
           src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/svgs/How_to_Be_Unhappy_A_Short_Guide-1.svg"
           alt="hero page"
-        /> -->
+        />
+        <!-- Play Audio Image -->
+        <img
+          id="play-audio"
+          src="https://kabirshuvo.com/images/Play_button.svg"
+          alt="play button icon"
+        />
+        <!-- Pause Audio Image -->
+        <img
+          id="pause-audio"
+          src="https://raw.githubusercontent.com/kabirshuvo/Audio-PDF/main/pause-button.svg"
+          alt="pause button"
+        />
       </div>
       <!-- Image Div -->
       <div class="imagesDiv">
